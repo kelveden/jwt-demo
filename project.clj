@@ -5,4 +5,4 @@
                  [org.clojure/clojure "1.8.0"]]
   :source-paths ["src/clj"]
   :profiles {:dev {:source-paths ["dev/clj"]
-                   :repl-options {:init-ns jwt-shared-secret}}})
+                   :repl-options {:init-ns jwt}}})
