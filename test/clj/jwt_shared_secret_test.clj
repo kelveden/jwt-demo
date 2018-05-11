@@ -1,4 +1,4 @@
-(ns jwt-test
+(ns clj.jwt-shared-secret-test
   (:require [cheshire.core :as json]
             [clojure.string :refer [split join]]
             [clojure.test :refer :all]

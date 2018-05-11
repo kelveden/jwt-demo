@@ -4,9 +4,7 @@
             [clojure.string :refer [split join]]
             [clojure.walk :refer [keywordize-keys]]
             [conversion :refer :all]
-            [pandect.algo.sha256 :as sha256]
-            [signature :refer :all])
-  (:import java.util.Base64))
+            [signature :refer :all]))
 
 (defn token-corrupted?
   "Verifies that the specified token has not been corrupted or tampered with by

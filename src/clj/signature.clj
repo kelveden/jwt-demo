@@ -22,5 +22,6 @@
 
 (defmethod verify-signature "RS256"
   [_ {:keys [header payload signature]} public-key]
-  (-> (str header payload)
-      (sha256/sha256-rsa-verify (base64->str signature) public-key)))
+  (let [signature-str (base64->str signature)]
+    (-> (str header payload)
+        (sha256/sha256-rsa-verify signature-str public-key))))

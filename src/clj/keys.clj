@@ -1,6 +1,5 @@
 (ns keys
   (:require [jwt :refer :all]
-            [cheshire.core :as json]
             [clojure.string :refer [split join]]
             [clojure.walk :refer [keywordize-keys]])
   (:import (java.security KeyPairGenerator)))
